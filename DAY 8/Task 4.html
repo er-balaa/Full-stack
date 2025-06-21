@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    Each square should be 200px by 200px
+    */
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 200px);
+      grid-template-rows: repeat(2, 200px);
+      gap: 10px;
+      width: 620px; 
+      height: 420px;
+    }
+    .white {
+      background-color: #F0F1EC;
+    }
+    .red {
+      background-color: #E72F24;
+    }
+    .black {
+      background-color: #232629;
+    }
+    .blue {
+      background-color: #004592;
+    }
+    .yellow {
+      background-color: #F9D01E;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div>
+    <div class="container">
+      <div class="red"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="white"></div>
+      <div class="black"></div>
+      <div class="blue"></div>
+      <div class="yellow"></div>
+   </div>
+</body>
+
+</html>
