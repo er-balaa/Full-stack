@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+  <button id="inc">+</button>
+  <button id="dec">-</button>
+  <button id="reset">Reset</button>
+  <p id="count">0</p> 
+
+  <script>
+    let count = 0;
+
+    const countDisplay = document.getElementById('count');
+    const incButton = document.getElementById('inc');
+    const decButton = document.getElementById('dec');
+    const resetButton = document.getElementById('reset');
+
+    incButton.addEventListener('click', () => {
+      count++;
+      countDisplay.textContent = count;
+    });
+
+    decButton.addEventListener('click', () => {
+        if (count > 0) // Prevent count from going below 0
+            count--;
+            countDisplay.textContent = count;
+    });
+
+    resetButton.addEventListener('click', () => {
+      count = 0;
+      countDisplay.textContent = count;
+    });
+  </script>
+</body>
+</html>
